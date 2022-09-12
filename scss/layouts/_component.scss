@@ -1,0 +1,369 @@
+.c-pri {
+    color: $color-pri;
+}
+
+.c-second {
+    color: $color-second;
+}
+
+.c-third {
+    color: $color-third;
+}
+
+.c-four {
+    color: $color-four;
+}
+
+.c-five {
+    color: $color-five;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-black {
+    color: $color-black;
+}
+
+.bc-pri {
+    background-color: $color-pri;
+}
+
+.bc-second {
+    background-color: $color-second;
+}
+
+.bc-third {
+    background-color: $color-third;
+}
+
+.bc-four {
+    background-color: $color-four;
+}
+
+.bc-five {
+    background-color: $color-five;
+}
+
+.over-hd {
+    overflow: hidden;
+}
+
+.z-i-1 {
+    z-index: 1;
+}
+
+.z-i-2 {
+    z-index: 2;
+}
+
+.z-i-3 {
+    z-index: 3;
+}
+
+.z-i-4 {
+    z-index: 4;
+}
+
+.z-i-5 {
+    z-index: 5;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 1.6rem;
+    &-bullet {
+        background-color: $color-pri;
+        opacity: 1;
+        position: relative;
+        margin: 0 8px !important;
+        flex-shrink: 0;
+        border-radius: 100rem;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100rem;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border: 1px solid $color-pri;
+            border-radius: 100rem;
+            opacity: 0;
+            @include transitionRe;
+        }
+        &-active {
+            background-color: $color-pri !important;
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.swiper-prev,
+.swiper-next {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100rem;
+    border: 1px solid $color-four;
+    @include mid-flex;
+    cursor: pointer;
+    i {
+        color: $color-four;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+
+.m-mid {
+    margin: 0 auto;
+}
+
+.m-end {
+    margin-left: auto;
+}
+
+.m-start {
+    margin-right: auto;
+}
+
+.f-mid {
+    @include mid-flex;
+}
+
+.f-end {
+    @include flex;
+    justify-content: flex-end;
+}
+
+.fl {
+    @include flex;
+}
+
+.fl-center {
+    @include flex;
+    align-items: center;
+}
+
+.f-space {
+    @include flex;
+    justify-content: space-between;
+}
+
+.icon-left {
+    margin-right: 0.8rem;
+}
+
+.icon-right {
+    margin-left: 0.8rem;
+}
+
+.spc {
+    &.no-wrap {
+        .spc-list {
+            flex-wrap: nowrap;
+        }
+    }
+    &-list {
+        @include flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        margin-left: -0.8rem;
+        margin-bottom: -0.8rem;
+    }
+    &-item {
+        margin-left: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    &-16 {
+        .spc-list {
+            margin-left: -1.6rem;
+            margin-bottom: -1.6rem;
+        }
+        .spc-item {
+            margin-bottom: 1.6rem;
+            margin-left: 1.6rem;
+        }
+    }
+    &-24 {
+        .spc-list {
+            margin-left: -2.4rem;
+            margin-bottom: -2.4rem;
+        }
+        .spc-item {
+            margin-bottom: 2.4rem;
+            margin-left: 2.4rem;
+        }
+    }
+}
+
+.fixed-ct {
+    position: fixed;
+    bottom: 30%;
+    right: 10px;
+    z-index: 50;
+}
+
+.phone-fixed {
+    @include min($res-mobile-min) {
+        display: none;
+    }
+    &-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 100rem;
+        background-color: $color-pri;
+        @include mid-flex;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid white;
+        animation: phoneRing 3s ease-in-out infinite;
+        i {
+            color: white;
+        }
+        @include min($res-mobile-min) {
+            &:hover~.number {
+                right: calc(100% + 10px);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .number {
+        @include fz-16;
+        color: $color-pri;
+        white-space: nowrap;
+        position: absolute;
+        @include posi-vertical;
+        @include transitionRe;
+        opacity: 0;
+        visibility: hidden;
+        right: 50%;
+    }
+}
+
+.play {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: white;
+    @include mid-flex;
+    position: relative;
+    flex-shrink: 0;
+    &:hover {
+        &::before {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        @include mid;
+        width: 120%;
+        height: 120%;
+        background: rgba(255, 255, 255, 0.3);
+        border: 1px solid white;
+        border-radius: 100rem;
+        @include transitionRe;
+    }
+    .icon {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.box-regis {
+    width: 13.3rem;
+    height: 13.3rem;
+    border-radius: 100rem;
+    @include mid-flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color-third;
+    position: relative;
+    z-index: 10;
+    padding: 1rem;
+    @include transitionRe;
+    @include max($res-mobile) {
+        width: 10rem;
+        height: 10rem;
+        padding: 0;
+    }
+    @include max(768px) {
+        width: 6rem;
+        height: 6rem;
+    }
+    &:hover {
+        background-color: $color-pri;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        @include mid;
+        width: 120%;
+        height: 120%;
+        border: 1px solid $color-third;
+        border-radius: 100rem;
+        @include transitionRe;
+        @include min($res-mobile-min) {
+            animation: boxRegiAni 2s ease-in-out infinite;
+            -webkit-animation: boxRegiAni 2s ease-in-out infinite;
+        }
+    }
+    .icon {
+        margin-bottom: 6px;
+        @include max($res-mobile) {
+            display: none;
+        }
+    }
+    .text {
+        @include fz-18;
+        color: white;
+        font-weight: 600;
+        @include max(768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@keyframes boxRegiAni {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.head {
+    @include flex;
+    justify-content: space-between;
+    @include max(768px) {
+        flex-direction: column;
+    }
+    .t-title {
+        @include max(768px) {
+            margin-bottom: 1.6rem;
+        }
+    }
+}
+
+.tabPanel {
+    display: none;
+    animation: fadeIn 0.6s ease-in-out;
+    -webkit-animation: fadeIn 0.6s ease-in-out;
+    &.open {
+        display: block;
+    }
+}
+
+.wave {
+    height: calc(100vw * (113 / 1728));
+}

@@ -1,0 +1,147 @@
+.footer {
+    background-color: #fff9ea;
+    &-wrapper {
+        padding: 10.4rem 0;
+        @include max($res-mobile) {
+            padding: 4rem 0;
+        }
+    }
+    &-main {
+        padding-bottom: 6.4rem;
+        border-bottom: 1px solid $color-text;
+    }
+    &-list {
+        margin-bottom: -3rem;
+    }
+    &-item {
+        width: calc(100% / 4);
+        margin-bottom: 3rem;
+        @include max(400px) {
+            width: 100% !important;
+        }
+        &-first {
+            @include max($res-mobile) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &-second {
+            @include max($res-mobile) {
+                width: calc(100% / 3);
+            }
+            @include max(768px) {
+                width: calc(100% / 2);
+            }
+            .footer-wrap {
+                margin-left: 5rem;
+                @include max($res-mobile) {
+                    margin-left: 0;
+                }
+            }
+        }
+        &-third {
+            @include max($res-mobile) {
+                width: calc(100% / 3);
+            }
+            @include max(768px) {
+                width: calc(100% / 2);
+            }
+        }
+        &-four {
+            @include max($res-mobile) {
+                width: calc(100% / 3);
+            }
+            @include max(768px) {
+                width: 100%;
+            }
+        }
+    }
+    &-logo {
+        display: block;
+        cursor: pointer;
+        width: 19rem;
+        margin-bottom: 3.2rem;
+        @include max($res-mobile) {
+            margin: 0 auto;
+            margin-bottom: 1.6rem;
+        }
+    }
+    &-title {
+        color: $color-text;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 3.2rem;
+    }
+    &-menu {
+        .menu {
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+                &.current_page_item {
+                    a {
+                        color: $color-second;
+                    }
+                }
+                a {
+                    color: $color-text;
+                    @include fz-18;
+                    font-weight: 600;
+                    @include transitionRe;
+                    &:hover {
+                        color: $color-second;
+                    }
+                }
+            }
+        }
+    }
+    &-contact {
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+    &-text {
+        @include flex;
+        align-items: center;
+        @include fz-18;
+        color: $color-text;
+        .btn {
+            margin-left: 0.8rem;
+            @include max($res-mobile) {
+                min-width: initial;
+                .icon {
+                    display: none;
+                }
+                .text {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    &-link {
+        @include transitionRe;
+        @include fz-18;
+        color: $color-text;
+        &:hover {
+            color: $color-second;
+        }
+    }
+    &-author {
+        margin-top: 2.4rem;
+        @include flex;
+        align-items: center;
+        justify-content: space-between;
+        @include max(768px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        &-text {
+            @include max(768px) {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}

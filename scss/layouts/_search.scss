@@ -1,0 +1,64 @@
+.search-mona {
+    @include max($res-mobile) {
+        position: fixed;
+        top: 75px;
+        right: 10px;
+        @include transitionRe;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(5px);
+        &.sticky {
+            top: 6rem;
+        }
+    }
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+}
+
+.search {
+    &-wrap {
+        @include flex;
+        align-items: stretch;
+        min-width: 250px;
+        border: 1px solid rgba(176, 163, 163, 0.3);
+        border-radius: 4rem;
+        overflow: hidden;
+        background-color: white;
+    }
+    &-input {
+        @include font-pri;
+        outline: none;
+        border: none;
+        @include fz-16;
+        color: $color-black;
+        flex: 1;
+        height: 4rem;
+        padding: 0 2rem 0 0;
+        background-color: white;
+        &::-webkit-input-placeholder {
+            color: rgba(139, 139, 139, 0.5);
+        }
+        &::-moz-input-placeholder {
+            color: rgba(139, 139, 139, 0.5);
+        }
+    }
+    &-btn {
+        @include mid-flex;
+        flex-shrink: 0;
+        width: 4rem;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            .icon {
+                transform: scale(1.05);
+            }
+        }
+        .icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}

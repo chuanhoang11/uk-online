@@ -1,0 +1,24 @@
+.mxh {
+    &-list {
+        @include flex;
+        align-items: center;
+        margin-left: -0.8rem;
+    }
+    &-link {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 100rem;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        margin-left: 0.8rem;
+        &:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

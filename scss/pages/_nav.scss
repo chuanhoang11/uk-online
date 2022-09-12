@@ -1,0 +1,59 @@
+.nav {
+    border-bottom: 1px solid #f6f3ea;
+    margin-bottom: 2.4rem;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        height: 0.5rem;
+    }
+    &-list {
+        @include flex;
+        align-items: center;
+        @include max($res-mobile) {
+            border-bottom: 1px solid #f6f3ea;
+        }
+    }
+    &-item {
+        &:not(:first-child) {
+            margin-left: 8.4rem;
+            @include max($res-mobile) {
+                margin-left: 2.4rem;
+            }
+        }
+        &:hover {
+            a {
+                color: $color-second;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        &.active {
+            a {
+                color: $color-second;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        a {
+            display: block;
+            @include fz-20;
+            color: #b4b4b4;
+            padding-right: 2rem;
+            padding-bottom: 1.2rem;
+            position: relative;
+            @include transitionRe;
+            white-space: nowrap;
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: $color-second;
+                @include transitionRe;
+            }
+        }
+    }
+}
