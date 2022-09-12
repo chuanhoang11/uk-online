@@ -1,6 +1,6 @@
 export default function PopupModule() {
     $(document).ready(function() {
-        $(".play").magnificPopup({
+        $(".play, .play-video").magnificPopup({
             type: "iframe",
             mainClass: "mfp-fade",
             removalDelay: 160,

@@ -160,3 +160,50 @@
         }
     }
 }
+
+.banner {
+    height: calc(100vw * (278 / 1728));
+    position: relative;
+    @include max($res-mobile) {
+        height: 20vw;
+    }
+    @include max(900px) {
+        height: 30vw;
+    }
+    @include max(768px) {
+        height: 50vw;
+    }
+    @include max($mobile) {
+        height: 80vw;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        @include full;
+        background: linear-gradient( 92.43deg, #64c0e7 12.22%, rgba(100, 192, 231, 0) 61.5%);
+        z-index: 1;
+    }
+    &-img {
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-posi {
+        position: absolute;
+        @include full;
+        z-index: 2;
+        .container {
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &-title {
+        color: white;
+        @include fz-56;
+        font-weight: 700;
+    }
+}

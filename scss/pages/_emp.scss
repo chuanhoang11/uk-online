@@ -1,0 +1,102 @@
+.emp {
+    overflow: hidden;
+    &-slider {
+        &-side {
+            &-left {
+                width: calc(100% * (300 / 1464));
+                @include max($res-mobile) {
+                    width: 100%;
+                    margin-bottom: 3rem;
+                }
+            }
+            &-right {
+                width: calc(100% * (1164 / 1464));
+                @include max($res-mobile) {
+                    width: 100%;
+                }
+            }
+        }
+        &-content {
+            @include max($res-mobile) {
+                padding-right: 1.5rem;
+            }
+        }
+        .swiper {
+            &-wrapper {
+                align-items: stretch;
+            }
+            &-slide {
+                height: initial;
+            }
+        }
+        .emp-img {
+            border-radius: 0 0 2rem 2rem;
+        }
+    }
+    &-wrap {}
+    &-img {
+        position: relative;
+        border-radius: 2rem;
+        overflow: hidden;
+        &-pd {
+            @include imgPd(366, 282);
+            border-radius: inherit;
+            img {
+                @include imgCover;
+            }
+        }
+        &:hover {
+            .emp-posi {
+                opacity: 1;
+            }
+            .emp-btn {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    &-content {
+        margin-top: 3rem;
+    }
+    &-name {
+        @include fz-18;
+        font-weight: 700;
+        color: $color-pri;
+        margin-bottom: 1rem;
+        @include transitionRe;
+        &:hover {
+            color: $color-third;
+            a {
+                color: $color-third;
+            }
+        }
+        a {
+            color: $color-pri;
+            @include transitionRe;
+        }
+    }
+    &-des {
+        color: #767676;
+        @include lc(3);
+    }
+    &-posi {
+        position: absolute;
+        @include full;
+        background: rgba($color: #000000, $alpha: 0.4);
+        @include mid-flex;
+        @include transitionRe;
+        opacity: 0;
+    }
+    &-btn {
+        display: block;
+        color: white;
+        @include transitionRe;
+        font-weight: 700;
+        @include transition(0.3s, ease-in-out, 0.1s);
+        transform: scale(0.8);
+        opacity: 0;
+        &:hover {
+            color: $color-third;
+        }
+    }
+}

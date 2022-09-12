@@ -5,20 +5,21 @@
     color: #118abd;
     text-transform: uppercase;
     position: relative;
+    width: fit-content;
+    &.four {
+        color: $color-four;
+    }
     &.dot-single {
-        padding-left: 2.8rem;
-        @include max($res-mobile) {
-            padding: 0;
-        }
         &::before {
             content: "";
-            position: absolute;
-            left: 0;
             top: 0.8rem;
             width: 1.8rem;
             height: 1.8rem;
             border-radius: 100rem;
             background-color: $color-second;
+            display: inline-block;
+            position: relative;
+            top: -2px;
             @include max(800px) {
                 top: 0.3rem;
             }
@@ -28,32 +29,28 @@
         }
     }
     &.dot-double {
-        padding: 0 2.8rem;
-        @include max($res-mobile) {
-            padding: 0;
-        }
         &::before {
             content: "";
-            position: absolute;
-            left: 0;
-            top: 0.8rem;
             width: 1.8rem;
+            display: inline-block;
             height: 1.8rem;
             border-radius: 100rem;
             background-color: $color-second;
+            position: relative;
+            top: -2px;
             @include max($res-mobile) {
                 display: none;
             }
         }
         &::after {
             content: "";
-            position: absolute;
-            right: 0;
-            top: 0.8rem;
             width: 1.8rem;
             height: 1.8rem;
             border-radius: 100rem;
+            display: inline-block;
             background-color: $color-second;
+            position: relative;
+            top: -2px;
             @include max($res-mobile) {
                 display: none;
             }

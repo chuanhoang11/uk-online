@@ -90,4 +90,82 @@ export default function SwiperModule() {
             }
         }
     }
+    var newsSlider = new Swiper(".news-slider .swiper", {
+        // freeMode: true,
+        watchSlidesProgress: true,
+        speed: 1200,
+        // autoplay: {
+        //     delay: 3000
+        // },
+        pagination: {
+            el: ".news-slider .swiper-pagination",
+            type: "bullets",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".news-slider .swiper-next",
+            prevEl: ".news-slider .swiper-prev"
+        },
+        // slidesPerGroup: 2,
+        loop: false,
+        spaceBetween: 24,
+        slidesPerView: 3.9,
+        effect: "slide",
+        fadeEffect: {
+            crossFade: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2
+            },
+            500: {
+                slidesPerView: 2.2
+            },
+            800: {
+                slidesPerView: 2.8
+            },
+            1200: {
+                slidesPerView: 3.9
+            }
+        }
+    });
+    var empSlider = new Swiper(".emp-slider .swiper", {
+        // freeMode: true,
+        watchSlidesProgress: true,
+        speed: 1200,
+        // autoplay: {
+        //     delay: 3000
+        // },
+        pagination: {
+            el: ".emp-slider .swiper-pagination",
+            type: "bullets",
+            clickable: true
+        },
+        navigation: {
+            nextEl: ".emp-slider .swiper-next",
+            prevEl: ".emp-slider .swiper-prev"
+        },
+        // slidesPerGroup: 2,
+        loop: false,
+        spaceBetween: 24,
+        slidesPerView: 3.9,
+        effect: "slide",
+        fadeEffect: {
+            crossFade: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1.2
+            },
+            500: {
+                slidesPerView: 2.2
+            },
+            800: {
+                slidesPerView: 2.8
+            },
+            1200: {
+                slidesPerView: 3.9
+            }
+        }
+    });
 }

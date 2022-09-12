@@ -1,0 +1,68 @@
+.dki {
+    padding: 12.4rem 0 18rem 0;
+    background-color: #daf3fd;
+    position: relative;
+    overflow: hidden;
+    @include max(768px) {
+        padding-top: 4rem;
+    }
+    &-decor {
+        position: absolute;
+        &-1 {
+            width: calc(100% * (131 / 1728));
+            padding-top: calc(100% * (131 / 1728));
+            top: 20%;
+            left: 40%;
+        }
+        &-2 {
+            width: calc(100% * (197 / 1728));
+            padding-top: calc(100% * (197 / 1728));
+            @include posi-vertical;
+            right: 7rem;
+        }
+        img {
+            @include imgContain;
+        }
+    }
+    &-side {
+        &-item {
+            margin-left: auto;
+            width: calc(100% / 2);
+            @include max($res-mobile) {
+                width: calc(100% * (8 / 12));
+            }
+            @include max(768px) {
+                width: 100%;
+            }
+        }
+    }
+    &-img {
+        position: absolute;
+        left: -1rem;
+        bottom: 0;
+        width: calc(100% * (750 / 1728));
+        padding-top: 30.5%;
+        @include max($mobile) {
+            width: 70%;
+            padding-top: 50%;
+        }
+        img {
+            @include imgContain;
+        }
+    }
+    &-head {
+        margin-bottom: 6rem;
+        .text {
+            @include fz-18;
+            color: $color-text;
+        }
+    }
+    &-main {
+        position: relative;
+        z-index: 3;
+    }
+    .btn {
+        margin-top: 1.6rem;
+        margin-left: auto;
+    }
+}

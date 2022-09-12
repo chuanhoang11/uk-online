@@ -2,12 +2,6 @@
     overflow: hidden;
     .head {
         justify-content: center;
-        .t-title {
-            &::before,
-            &::after {
-                top: 3.4rem;
-            }
-        }
     }
     &-over {
         overflow-x: auto;

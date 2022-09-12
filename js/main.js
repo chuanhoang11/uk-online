@@ -19,6 +19,8 @@ import PlusMinusModule from "./module/PlusMinusModule.js";
 import SideModule from "./module/SideModule.js";
 import ShowHideModule from "./module/ShowHideModule.js";
 import WaveModule from "./module/WaveModule.js";
+import TextCircleModule from "./module/TextCircleModule.js";
+import ComponentModule from "./module/ComponentModule.js";
 
 window.addEventListener("DOMContentLoaded", () => {
     MobileModule();
@@ -42,4 +44,6 @@ window.addEventListener("DOMContentLoaded", () => {
     SideModule();
     ShowHideModule();
     WaveModule();
+    TextCircleModule();
+    ComponentModule();
 });

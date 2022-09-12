@@ -7,6 +7,11 @@
 }
 
 .f {
+    &-gr {
+        &:not(:last-child) {
+            margin-bottom: 1.6rem;
+        }
+    }
     &-list {
         @include flex-st;
         flex-wrap: wrap;
@@ -45,10 +50,20 @@
         display: block;
     }
     &-input {
-        padding: 1.6rem;
+        padding: 0 2.4rem;
         width: 100%;
         @include font-pri;
         border: none;
         outline: none;
+        @include fz-16;
+        color: $color-black;
+        height: 4.8rem;
+        border-radius: 4rem;
+        &::-webkit-input-placeholder {
+            color: #aaaaaa;
+        }
+        &::-moz-input-placeholder {
+            color: #aaaaaa;
+        }
     }
 }

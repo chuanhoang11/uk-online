@@ -1,0 +1,29 @@
+.breadcrumb {
+    &-list {
+        @include flex;
+        align-items: center;
+    }
+    &-link {
+        color: white;
+        @include fz-14;
+        font-weight: 400;
+        display: block;
+        position: relative;
+        @include transitionRe;
+        &:hover {
+            color: $color-third;
+        }
+        &:not(:first-child) {
+            margin-left: 3.2rem;
+            &::before {
+                content: ">";
+                position: absolute;
+                @include posi-vertical;
+                left: -1.7rem;
+            }
+            &:last-child {
+                color: $color-four;
+            }
+        }
+    }
+}

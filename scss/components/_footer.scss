@@ -1,5 +1,6 @@
 .footer {
     background-color: #fff9ea;
+    margin-top: -1px;
     &-wrapper {
         padding: 10.4rem 0;
         @include max($res-mobile) {

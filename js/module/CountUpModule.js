@@ -1,9 +1,8 @@
-export default function CountUpModule() 
-{   
-  $(document).ready(function(){
-    $('.as-number .count').counterUp({
-      delay: 5,
-      time: 3000
+export default function CountUpModule() {
+    $(document).ready(function() {
+        $(".tuto-content .number span").counterUp({
+            delay: 5,
+            time: 3000
+        });
     });
-});
 }
