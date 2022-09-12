@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/backdoor.css">
+    <link rel="icon" type="image/png" href="./assets/images/mona.png" />
+    <title>Tin tức detail</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <a href="" class="header-logo">
+                    <img src="./assets/images/header-logo.png" alt="">
+                </a>
+                <div class="header-mid">
+                    <div class="header-search">
+                        <div class="search-mona">
+                            <form method="get" id="searchform" class="searchform" action="">
+                                <div class="search-wrap">
+                                    <button type="submit" class="search-btn">
+                                        <img src="./assets/images/icon-search.svg" alt="" class="icon">
+                                    </button>
+                                    <input type="text" class="search-input" placeholder="Tìm kiếm khóa học">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="menu-nav">
+                            <ul class="menu-list">
+                                <li class="menu-item current_page_item">
+                                    <a href="">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Đội ngũ đào tạo
+                                    </a>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="">
+                                        Khoá học
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item dropdown">
+                                                    <a href="">
+                                                        Submenu 1 1
+                                                    </a>
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 1
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 2
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 3
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 2
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 2 1
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 2 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Thư viện
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-item  btn-phone">
+                        <a href="" class="btn btn-second">
+                            <img src="./assets/images/icon-phone.svg" alt="" class="icon icon-left">
+                            <p class="text">
+                                0904048181
+                            </p>
+                        </a>
+                    </div>
+                    <div class="header-right-item  btn-regi">
+                        <a href="" class="btn">
+                            <i class="far fa-user icon"></i>
+                            <p class="text">
+                                Tài khoản
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-search-icon">
+                    <img src="./assets/images/icon-search.svg" alt="" class="icon">
+                </div>
+                <div class="burger">
+                    <div class="hamburger" id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-overlay"></div>
+        <div class="mobile">
+            <div class="mobile-con">
+                <div class="mobile-wr">
+                    <div class="mobile-account" style="display: none;">
+                        <div class="mobile-re" style="display: none;">
+                            <a href="" class="mobile-re-link">
+                                Login
+                            </a>
+                            <a href="" class="mobile-re-link">
+                                Register
+                            </a>
+                        </div>
+                        <div class="mobile-user">
+                            <div class="mobile-user-ava">
+                                <img src="" alt="">
+                            </div>
+                            <p class="mobile-user-name">
+                                John Blue
+                            </p>
+                            <div class="mobile-user-menu">
+                                <a href="" class="link">my profile</a>
+                                <a href="" class="link">Customer support</a>
+                                <a href="" class="link">Shop Experiences</a>
+                                <a href="" class="link">Order history</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav">
+                        <nav class="menu-nav">
+                            <ul class="menu-list">
+                                <li class="menu-item ">
+                                    <a href="">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Đội ngũ đào tạo
+                                    </a>
+                                </li>
+                                <li class="menu-item dropdown current_page_item">
+                                    <a href="">
+                                        Khoá học
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item dropdown">
+                                                    <a href="">
+                                                        Submenu 1 1
+                                                    </a>
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 1
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 2
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 3
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 2
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item current_page_item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Thư viện
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-content">
+                        <p class="mobile-title">
+                            Thông tin liên hệ
+                        </p>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6"> Địa chỉ: </span>
+                            <p class="mobile-text mobile-link">
+                                373/226 Lý Thường Kiệt, P8, Q. Tân Bình, TP. HCM
+                            </p>
+                        </div>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6">Phone:</span>
+                            <a href="" class="mobile-text mobile-link">
+                                0904048181
+                            </a>
+                        </div>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6">Email:</span>
+                            <a href="" class="mobile-text mobile-link">
+                                hotro.ukonline@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-mxh">
+                <a href="" class="mobile-mxh-link face">
+                    <img src="./assets/images/icon-facer.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link twitter">
+                    <img src="./assets/images/icon-twitter.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link ins">
+                    <img src="./assets/images/icon-ins.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link linkedin">
+                    <img src="./assets/images/icon-linkedin.svg" alt="">
+                </a>
+            </div>
+            <div class="mobile-close">
+                <i class="fas fa-times icon"></i>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item" data-aos="fade-right" data-aos-delay="100">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item" data-aos="fade-right" data-aos-delay="200">
+                        <a href="#">Tin tức</a>
+                    </li>
+                    <li class="breadcrumb-item" data-aos="fade-right" data-aos-delay="400">
+                        <a href="#">Chương trình đặc biệt dành cho các bạn 2k6</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="document">
+            <div class="document-header" data-aos="fade-up">
+                <div class="container">
+                    <div class="document-tt">
+                        <h2 class="t-title">Chương trình đặc biệt dành cho các bạn 2k6 </h2>
+                    </div>
+                    <div class="document-time">
+                        <img src="./assets/images/icon-time.svg" alt="">
+                        45 phút trước
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-banner" data-aos="fade-up">
+                <img src="./assets/images/document-banner.png" alt="">
+            </div>
+
+            <div class="document-content">
+                <div class="container">
+                    <div class="content">
+                        <div class="content-tt" data-aos="fade-up">
+                            <h3>2K6 ơi! Các bạn ở đâu!?</h3>
+                        </div>
+    
+                        <div class="content-dt" data-aos="fade-up">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare cras morbi et tincidunt. Vitae sapien nec turpis urna lacus, justo, aliquet bibendum faucibus. Enim pellentesque congue dictum netus. Id consequat tincidunt velit quam iaculis nunc. Vel tellus nunc ante quis dolor, blandit odio nec. Sit metus est eget in diam potenti commodo ornare. Eget semper sed tincidunt sit varius. Elit id amet leo congue convallis cras nam lacus. Ipsum, aenean ullamcorper eget malesuada diam amet eget. Scelerisque volutpat lectus nisi eu viverra elit pellentesque massa. Ut sagittis duis tristique pellentesque neque, potenti. Sed tortor nunc, ornare orci nisi adipiscing neque. Venenatis morbi semper purus mauris. At massa accumsan, mus nulla. Porttitor in posuere leo, in imperdiet. Sem mattis nunc, tristique tempus. Lorem eget posuere turpis quis diam. Eu, leo, nisi quis pretium vitae at leo faucibus massa. Congue enim sit dui ac ut quis tempus.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare cras morbi et tincidunt. Vitae sapien nec turpis urna lacus, justo, aliquet bibendum faucibus. Enim pellentesque congue dictum netus. Id consequat tincidunt velit quam iaculis nunc. Vel tellus nunc ante quis dolor, blandit odio nec. Sit metus est eget in diam potenti commodo ornare. Eget semper sed tincidunt sit varius. Elit id amet leo congue convallis cras nam lacus. Ipsum, aenean ullamcorper eget malesuada diam amet eget. Scelerisque volutpat lectus nisi eu viverra elit pellentesque massa. Ut sagittis duis tristique pellentesque neque.</p>
+                            
+                            <div class="content-dt-row">
+                                <div class="content-dt-text">
+                                    <p class="dot">Sed tortor nunc, ornare orci nisi adipiscing neque. Venenatis morbi semper purus mauris. At massa accumsan, mus nulla. Porttitor in posuere leo, in imperdiet. Sem mattis nunc, tristique tempus. Lorem eget posuere turpis quis diam. </p>
+                                    <p class="dot">Eu, leo, nisi quis pretium vitae at leo faucibus massa. Congue enim sit dui ac ut quis tempus. Scelerisque volutpat lectus nisi eu viverra elit pellentesque massa. Ut sagittis duis tristique pellentesque neque, potenti. </p>
+                                    <p class="dot">Sed tortor nunc, ornare orci nisi adipiscing neque. Venenatis morbi semper purus mauris. At massa accumsan, mus nulla</p>
+                                </div>
+                                <div class="content-dt-img">
+                                    <p class="img">
+                                        <img src="./assets/images/review-book.png" alt="">
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="quote">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare cras morbi et tincidunt. Vitae sapien nec turpis urna lacus, justo, aliquet bibendum faucibus. Enim pellentesque congue dictum netus. Id consequat tincidunt velit quam iaculis nunc.
+                                <span class="more">-Ut sagittis duis tristique pellentesque neque.</span>
+                            </p>
+                        </div>
+
+                        <div class="share" data-aos="fade-up">
+                            <p class="share-label">Chia sẻ</p>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a href="#">
+                                        <img src="./assets/images/share-fb.svg" alt="">
+                                        <img src="./assets/images/share-fb.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="share-item">
+                                    <a href="#">
+                                        <img src="./assets/images/share-twitter.svg" alt="">
+                                        <img src="./assets/images/share-twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="share-item">
+                                    <a href="#">
+                                        <img src="./assets/images/share-linkedin.svg" alt="">
+                                        <img src="./assets/images/share-linkedin.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="document-navi" data-aos="fade-up">
+                <div class="container">
+                    <div class="document-navi-row">
+                        <div class="document-navi-item">
+                            <a href="#">
+                                <img src="./assets/images/left-arrow-big.svg" alt="">
+                                Collins for IELTS: Reading, Speaking, Listening, Writing
+                            </a>
+                        </div>
+                        <div class="document-navi-item">
+                            <a href="#">
+                                <img src="./assets/images/left-arrow-big.svg" alt="">
+                                Cách làm dạng bài True/ False/ Not given trong IELTS Reading
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-related">
+            <div class="container">
+                <div class="news-related-tt">
+                    <p>Tin tức liên quan</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="dnor footer-list">
+                        <div class="dnor-item footer-item footer-item-first">
+                            <div class="footer-wrap">
+                                <a href="" class="footer-logo">
+                                    <img src="./assets/images/header-logo.png" alt="">
+                                </a>
+                                <p class="text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lorem senectus tempus commodo arcu.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-second">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    VỀ CHÚNG TÔI
+                                </p>
+                                <div class="footer-menu">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Giới thiệu
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Thư viện
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Liên hệ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-third">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    HỖ TRỢ
+                                </p>
+                                <div class="footer-menu">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Hướng dẫn tham gia
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Điều khoản sử dụng
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Chính sách bảo mật
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Câu hỏi thường gặp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-four">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    LIÊN HỆ
+                                </p>
+                                <div class="footer-contact">
+                                    <div class="footer-contact-item">
+                                        <p class="footer-text">
+                                            Địa chỉ: 373/226 Lý Thường Kiệt, P8, Q. Tân Bình, TP. HCM
+                                        </p>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <p href="" class="footer-text">
+                                            Mail:
+                                            <a href="" class="footer-link">
+                                                hotro.ukonline@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <div class="footer-text">
+                                            Mail:
+                                            <a href="" class="btn btn-third">
+                                                <img src="./assets/images/icon-phone.svg" alt="" class="icon icon-left">
+                                                <p class="text">
+                                                    0904048181
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-author">
+                    <p class="footer-author-text">
+                        © Designed and Developed by Mona Media
+                    </p>
+                    <div class="footer-mxh">
+                        <div class="mxh">
+                            <div class="mxh-list">
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-facer.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-twitter.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-ins.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-linkedin.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed-ct">
+        <div class="fixed-ct-item phone-fixed">
+            <a href="" class="phone-fixed-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="" class="number">
+                0904048181
+            </a>
+        </div>
+    </div>
+    <div class="back-to-top backToTop">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/slick/slick.min.js"></script>
+    <script src="./js/library/wow/wow.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/vanilla/vanilla.js"></script>
+    <script src="./js/library/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/countup/jquery.counterup.min.js"></script>
+    <script src="./js/library/countup/jquery.waypoints.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/isotope/isotope.pkgd.min.js"></script>
+    <script src="./js/library/popper/popper.min.js"></script>
+    <script src="./js/library/anime/anime.min.js"></script>
+    <script src="./js/library/datetime/moment.min.js"></script>
+    <script src="./js/library/datetime/daterangepicker.min.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

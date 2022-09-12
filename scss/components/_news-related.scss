@@ -1,0 +1,14 @@
+.news-related {
+    margin: 6.4rem 0;
+
+    @include max(1200px) {
+        margin: 5.6rem 0
+    }
+
+    &-tt {
+        @include fz-20;
+        font-weight: 700;
+        color: $color-four;
+        margin-bottom: 2.2rem;
+    }
+}

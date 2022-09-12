@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/backdoor.css">
+    <link rel="icon" type="image/png" href="./assets/images/mona.png" />
+    <title>Liên hệ</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-wrapper">
+                <a href="" class="header-logo">
+                    <img src="./assets/images/header-logo.png" alt="">
+                </a>
+                <div class="header-mid">
+                    <div class="header-search">
+                        <div class="search-mona">
+                            <form method="get" id="searchform" class="searchform" action="">
+                                <div class="search-wrap">
+                                    <button type="submit" class="search-btn">
+                                        <img src="./assets/images/icon-search.svg" alt="" class="icon">
+                                    </button>
+                                    <input type="text" class="search-input" placeholder="Tìm kiếm khóa học">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-nav">
+                        <nav class="menu-nav">
+                            <ul class="menu-list">
+                                <li class="menu-item current_page_item">
+                                    <a href="">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Đội ngũ đào tạo
+                                    </a>
+                                </li>
+                                <li class="menu-item dropdown">
+                                    <a href="">
+                                        Khoá học
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item dropdown">
+                                                    <a href="">
+                                                        Submenu 1 1
+                                                    </a>
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 1
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 2
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 3
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 2
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 2 1
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 2 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Thư viện
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-item  btn-phone">
+                        <a href="" class="btn btn-second">
+                            <img src="./assets/images/icon-phone.svg" alt="" class="icon icon-left">
+                            <p class="text">
+                                0904048181
+                            </p>
+                        </a>
+                    </div>
+                    <div class="header-right-item  btn-regi">
+                        <a href="" class="btn">
+                            <i class="far fa-user icon"></i>
+                            <p class="text">
+                                Tài khoản
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-search-icon">
+                    <img src="./assets/images/icon-search.svg" alt="" class="icon">
+                </div>
+                <div class="burger">
+                    <div class="hamburger" id="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-overlay"></div>
+        <div class="mobile">
+            <div class="mobile-con">
+                <div class="mobile-wr">
+                    <div class="mobile-account" style="display: none;">
+                        <div class="mobile-re" style="display: none;">
+                            <a href="" class="mobile-re-link">
+                                Login
+                            </a>
+                            <a href="" class="mobile-re-link">
+                                Register
+                            </a>
+                        </div>
+                        <div class="mobile-user">
+                            <div class="mobile-user-ava">
+                                <img src="" alt="">
+                            </div>
+                            <p class="mobile-user-name">
+                                John Blue
+                            </p>
+                            <div class="mobile-user-menu">
+                                <a href="" class="link">my profile</a>
+                                <a href="" class="link">Customer support</a>
+                                <a href="" class="link">Shop Experiences</a>
+                                <a href="" class="link">Order history</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-nav">
+                        <nav class="menu-nav">
+                            <ul class="menu-list">
+                                <li class="menu-item ">
+                                    <a href="">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Đội ngũ đào tạo
+                                    </a>
+                                </li>
+                                <li class="menu-item dropdown current_page_item">
+                                    <a href="">
+                                        Khoá học
+                                    </a>
+                                    <ul class="menu-list">
+                                        <li class="menu-item dropdown">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                            <ul class="menu-list">
+                                                <li class="menu-item dropdown">
+                                                    <a href="">
+                                                        Submenu 1 1
+                                                    </a>
+                                                    <ul class="menu-list">
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 1
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 2
+                                                            </a>
+                                                        </li>
+                                                        <li class="menu-item">
+                                                            <a href="">
+                                                                Submenu 1 1 3
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 2
+                                                    </a>
+                                                </li>
+                                                <li class="menu-item">
+                                                    <a href="">
+                                                        Submenu 1 3
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item current_page_item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học demo
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Thư viện
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="mobile-content">
+                        <p class="mobile-title">
+                            Thông tin liên hệ
+                        </p>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6"> Địa chỉ: </span>
+                            <p class="mobile-text mobile-link">
+                                373/226 Lý Thường Kiệt, P8, Q. Tân Bình, TP. HCM
+                            </p>
+                        </div>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6">Phone:</span>
+                            <a href="" class="mobile-text mobile-link">
+                                0904048181
+                            </a>
+                        </div>
+                        <div class="mobile-fl mb-16s">
+                            <span class="fw-6">Email:</span>
+                            <a href="" class="mobile-text mobile-link">
+                                hotro.ukonline@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-mxh">
+                <a href="" class="mobile-mxh-link face">
+                    <img src="./assets/images/icon-facer.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link twitter">
+                    <img src="./assets/images/icon-twitter.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link ins">
+                    <img src="./assets/images/icon-ins.svg" alt="">
+                </a>
+                <a href="" class="mobile-mxh-link linkedin">
+                    <img src="./assets/images/icon-linkedin.svg" alt="">
+                </a>
+            </div>
+            <div class="mobile-close">
+                <i class="fas fa-times icon"></i>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contact">
+            <div class="container">
+                <div class="contact-info">
+                    <div class="contact-info-tt" data-aos="fade-up">
+                        <h2 class="t-title dot-double">THÔNG TIN CÁC CƠ SỞ</h2>
+                    </div>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item" data-aos="fade-up">
+                            <div class="contact-info-header toggleContactBtn active">
+                                <div class="name">Cơ sở 1 - Miền Nam</div>
+                                <div class="icon">
+                                    <img src="./assets/images/chevron-up.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="contact-info-body toggleContactContent">
+                                <div class="contact-info-rows">
+                                    <div class="contact-info-col">
+                                        <div class="item">
+                                            <div class="maps">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3919.2722258832205!2d106.65367070063877!3d10.790450042274356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTA3My8yMyBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyA3LCBxdeG6rW4gVMOibiBCw6xuaCwgVFAuIEhDTQ!5e0!3m2!1svi!2s!4v1662968780103!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                            
+                                            <div class="attr-list">
+                                                <a href="#" class="attr-item">
+                                                    <div class="icon">
+                                                        <img src="./assets/images/icon-gps.svg" alt="">
+                                                    </div>
+                                                    <div class="txt">1073/23 Cách Mạng Tháng 8, Phường 7, quận Tân Bình, TP. HCM</div>
+                                                </a>
+                                                <a href="tel:0983533005" class="attr-item">
+                                                    <div class="icon">
+                                                        <img src="./assets/images/icon-phone-call.svg" alt="">
+                                                    </div>
+                                                    <div class="txt">0983.533.005</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-col">
+                                        <div class="img">
+                                            <img src="./assets/images/contact-info.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item" data-aos="fade-up">
+                            <div class="contact-info-header toggleContactBtn">
+                                <div class="name">Cơ sở 2 - Miền Bắc</div>
+                                <div class="icon">
+                                    <img src="./assets/images/chevron-up.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="contact-info-body toggleContactContent">
+                                <div class="contact-info-rows">
+                                    <div class="contact-info-col">
+                                        <div class="item">
+                                            <div class="maps">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3919.2722258832205!2d106.65367070063877!3d10.790450042274356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTA3My8yMyBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyA3LCBxdeG6rW4gVMOibiBCw6xuaCwgVFAuIEhDTQ!5e0!3m2!1svi!2s!4v1662968780103!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                            
+                                            <div class="attr-list">
+                                                <a href="#" class="attr-item">
+                                                    <div class="icon">
+                                                        <img src="./assets/images/icon-gps.svg" alt="">
+                                                    </div>
+                                                    <div class="txt">1073/23 Cách Mạng Tháng 8, Phường 7, quận Tân Bình, TP. HCM</div>
+                                                </a>
+                                                <a href="tel:0983533005" class="attr-item">
+                                                    <div class="icon">
+                                                        <img src="./assets/images/icon-phone-call.svg" alt="">
+                                                    </div>
+                                                    <div class="txt">0983.533.005</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-col">
+                                        <div class="img">
+                                            <img src="./assets/images/contact-info.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-footer">
+                    <div class="contact-form tabJS" data-aos="fade-up">
+                        <div class="contact-form-tt">
+                            <h2 class="t-title dot-double">GỬI LIÊN HỆ</h2>
+                        </div>
+
+                        <div class="contact-form-tab">
+                            <div class="tabs">
+                                <div class="tab tabBtn active">Tư vấn</div>
+                                <div class="tab tabBtn">Góp ý</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-panel">
+                            <div class="tabPanel">
+                                <div class="form">
+                                    <form action="#">
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="email" name="" id="" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Số điện thoại">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Tiêu đề">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <textarea name="" id="" placeholder="Chi tiết"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="f-btn">
+                                            <input type="submit" class="btn" value="Gửi">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tabPanel">
+                                <div class="form">
+                                    <form action="#">
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="email" name="" id="" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Số điện thoại">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <input type="text" name="" id="" placeholder="Tiêu đề">
+                                            </div>
+                                        </div>
+                                        <div class="f-r">
+                                            <div class="f-c">
+                                                <textarea name="" id="" placeholder="Chi tiết"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="f-btn">
+                                            <input type="submit" class="btn" value="Gửi">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-faq" data-aos="fade-up">
+                        <div class="contact-faq-wrap">
+                            <div class="faq-tt">
+                                <h2 class="t-title dot-double">CÂU HỎI THƯỜNG GẶP</h2>
+                            </div>
+    
+                            <div class="faq-list">
+                                <div class="faq-item faqBtn active">
+                                    <div class="faq-header">
+                                        <div class="title">1. Lorem ipsum dolor sit amet consectetur adipiscing</div>
+                                        <div class="icon">
+                                            <img src="./assets/images/faq-arrow.svg" alt="">
+                                            <img src="./assets/images/faq-arrow-active.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="faq-body faqContent">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis sapien, in dolor venenatis magna. Nunc enim quisque dignissim ipsum, duis a. Adipiscing risus arcu quam ultricies. </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item faqBtn">
+                                    <div class="faq-header">
+                                        <div class="title">2. Lorem ipsum dolor sit amet consectetur adipiscing</div>
+                                        <div class="icon">
+                                            <img src="./assets/images/faq-arrow.svg" alt="">
+                                            <img src="./assets/images/faq-arrow-active.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="faq-body faqContent">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis sapien, in dolor venenatis magna. Nunc enim quisque dignissim ipsum, duis a. Adipiscing risus arcu quam ultricies. </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item faqBtn">
+                                    <div class="faq-header">
+                                        <div class="title">3. Lorem ipsum dolor sit amet consectetur adipiscing</div>
+                                        <div class="icon">
+                                            <img src="./assets/images/faq-arrow.svg" alt="">
+                                            <img src="./assets/images/faq-arrow-active.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="faq-body faqContent">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis sapien, in dolor venenatis magna. Nunc enim quisque dignissim ipsum, duis a. Adipiscing risus arcu quam ultricies. </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item faqBtn">
+                                    <div class="faq-header">
+                                        <div class="title">4. Lorem ipsum dolor sit amet consectetur adipiscing</div>
+                                        <div class="icon">
+                                            <img src="./assets/images/faq-arrow.svg" alt="">
+                                            <img src="./assets/images/faq-arrow-active.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="faq-body faqContent">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis sapien, in dolor venenatis magna. Nunc enim quisque dignissim ipsum, duis a. Adipiscing risus arcu quam ultricies. </p>
+                                    </div>
+                                </div>
+                                <div class="faq-item faqBtn">
+                                    <div class="faq-header">
+                                        <div class="title">5. Lorem ipsum dolor sit amet consectetur adipiscing</div>
+                                        <div class="icon">
+                                            <img src="./assets/images/faq-arrow.svg" alt="">
+                                            <img src="./assets/images/faq-arrow-active.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="faq-body faqContent">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis sapien, in dolor venenatis magna. Nunc enim quisque dignissim ipsum, duis a. Adipiscing risus arcu quam ultricies. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="dnor footer-list">
+                        <div class="dnor-item footer-item footer-item-first">
+                            <div class="footer-wrap">
+                                <a href="" class="footer-logo">
+                                    <img src="./assets/images/header-logo.png" alt="">
+                                </a>
+                                <p class="text">
+                                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus lorem senectus tempus commodo arcu.”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-second">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    VỀ CHÚNG TÔI
+                                </p>
+                                <div class="footer-menu">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Giới thiệu
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Khoá học
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Thư viện
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Liên hệ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-third">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    HỖ TRỢ
+                                </p>
+                                <div class="footer-menu">
+                                    <ul class="menu-list">
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Hướng dẫn tham gia
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Điều khoản sử dụng
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Chính sách bảo mật
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="">
+                                                Câu hỏi thường gặp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dnor-item footer-item footer-item-four">
+                            <div class="footer-wrap">
+                                <p class="footer-title">
+                                    LIÊN HỆ
+                                </p>
+                                <div class="footer-contact">
+                                    <div class="footer-contact-item">
+                                        <p class="footer-text">
+                                            Địa chỉ: 373/226 Lý Thường Kiệt, P8, Q. Tân Bình, TP. HCM
+                                        </p>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <p href="" class="footer-text">
+                                            Mail:
+                                            <a href="" class="footer-link">
+                                                hotro.ukonline@gmail.com
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <div class="footer-text">
+                                            Mail:
+                                            <a href="" class="btn btn-third">
+                                                <img src="./assets/images/icon-phone.svg" alt="" class="icon icon-left">
+                                                <p class="text">
+                                                    0904048181
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-author">
+                    <p class="footer-author-text">
+                        © Designed and Developed by Mona Media
+                    </p>
+                    <div class="footer-mxh">
+                        <div class="mxh">
+                            <div class="mxh-list">
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-facer.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-twitter.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-ins.svg" alt="">
+                                </a>
+                                <a href="" class="mxh-link">
+                                    <img src="./assets/images/icon-linkedin.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="fixed-ct">
+        <div class="fixed-ct-item phone-fixed">
+            <a href="" class="phone-fixed-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="" class="number">
+                0904048181
+            </a>
+        </div>
+    </div>
+    <div class="back-to-top backToTop">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/slick/slick.min.js"></script>
+    <script src="./js/library/wow/wow.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/vanilla/vanilla.js"></script>
+    <script src="./js/library/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/countup/jquery.counterup.min.js"></script>
+    <script src="./js/library/countup/jquery.waypoints.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/isotope/isotope.pkgd.min.js"></script>
+    <script src="./js/library/popper/popper.min.js"></script>
+    <script src="./js/library/anime/anime.min.js"></script>
+    <script src="./js/library/datetime/moment.min.js"></script>
+    <script src="./js/library/datetime/daterangepicker.min.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+.breadcrumb {
+    padding: 3.2rem 0;
+    overflow: hidden;
+
+    &-list {
+        @include mid-flex();
+        justify-content: flex-start;
+        -webkit-justify-content: flex-start;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        width: calc(100% + 3.2rem);
+        margin-left: -1.6rem;
+    }
+
+    &-item {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(50%, -40%);
+            width: 0.5rem;
+            height: 0.8rem;
+            background: url("../assets/images/icon-arrow.svg") no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            padding: 0 1.6rem;
+            @include mid-flex();
+            font-size: 1.4rem;
+            color: $color-text;
+            transition: 0.3s;
+
+            &:hover {
+                @include min($res-mobile-min) {
+                    color: $color-four;
+                }
+            }
+        }
+
+        &:last-child {
+            &::after {
+                content: none;
+            }
+            
+            a {
+                color: $color-four;
+                font-weight: 700;
+            }
+        }
+    }
+}
